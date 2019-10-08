@@ -1,0 +1,81 @@
+/*CSS - PEDIDOS*/
+body{
+	background-color: #f5f5f5;
+}
+.pedidos{
+	height: 100%;
+	background-color: #f5f5f5;
+}
+#tituloPedidos{
+    margin-top: 10px;
+    text-align: center;
+    text-shadow: rgb(226, 225, 225) 0.1em 0.1em 0.2em;
+    margin-bottom: 20px;
+}
+.main-panel{
+	background-color: #f5f5f5;
+}
+.principal{
+	height: 100px;
+	background-color: #f5f5f5;
+}
+.btn{
+	border-color: none ! important;
+	outline: 0;
+	-webkit-box-shadow: none ! important;
+}
+.btn:hover{
+	opacity: 0.9;
+}
+.btn-primary:hover{
+	background: #434343;
+	letter-spacing: 1px;
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.4s ease 0s;
+}
+#botaoNav {
+    color: rgb(255, 150, 0);
+    border-color: none ! important;
+	outline: 0;
+	-webkit-box-shadow: none ! important;
+}
+#botaoNav:focus{
+	background-color: #42210D;
+	color: #fff;
+}
+#buttonStatus{
+	margin-left: 5px;
+}
+.card-body{
+	width: 2000px;
+	margin-left: 110px;
+	margin-right: 10px;
+	background-color: #fff;
+	border: 2px #ccc;
+	
+}
+#divProdutos{
+    margin-left: 7px;
+}
+
+#descricaoProd {
+    width: 300px;
+}
+
+#quantidade{
+    margin-left: 30px;
+}
+
+#total{
+    margin-left: 17px;
+}
+
+#valor{
+    margin-left: 20px;
+}
+
+#divEndereco{
+    margin-left: 7px;
+}

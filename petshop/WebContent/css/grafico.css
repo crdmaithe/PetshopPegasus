@@ -1,0 +1,69 @@
+/* Gráfico Serviços prestados*/
+body{
+	background-color: #f5f5f5;
+}
+.principal{
+	height: 50px;
+}
+.main-panel{
+	margin-left: 250px;
+	height: 70px;
+	background-color: #f5f5f5;
+}
+.fa-thumbs-up{
+	font-size: 25px;
+}
+.myAlert-top{
+    position: relative;
+    top: 0%; 
+    left:5%;
+    width: 92%;
+}
+/* Gráfico pedidos finalizados*/
+#chart3 {
+    border: 1px solid #c7c7c7;
+    border-radius: 5px;
+    background-color: #fff;
+}
+  
+#g3 {
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 15px;
+    position: relative;
+    height: 40vh;
+    width: 45%;
+}
+
+/* Gráfico novos usuarios*/
+#chart2 {
+    border: 1px solid #c7c7c7;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+#g2 {
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 15px;
+    position: relative;
+    height: 40vh;
+    width: 45%;
+}
+
+/* Gráfico vendas*/
+#chart {
+    border: 1px solid #c7c7c7;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+#g1 {
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 15px;
+    position: relative;
+    height: 40vh;
+    width: 91.5%;
+    margin-block-end: 30px;
+}

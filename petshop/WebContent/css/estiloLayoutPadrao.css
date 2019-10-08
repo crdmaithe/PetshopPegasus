@@ -1,0 +1,220 @@
+/*TOPO ADMINISTRADOR*/
+/*Padronizar tags HTML*/
+/*Padrão*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font: 14px sans-serif;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+    scroll-behavior: smooth;
+    background-color: #f5f5f5;
+}
+/*Topo*/
+.menu-principal{
+	position: fixed;
+	z-index: +1;
+    top: 0;
+    width: 100%;
+    background-color:#fff;
+    height: 50px;
+    margin-right: 0px;
+    margin-top: 0px; 
+}
+.main-panel{
+	background-color: #fff;
+    margin-left: 220px;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px; 
+    background-color: #f5f5f5;
+}
+/*Itens naveção menu-principal (Início/Cadastro/Contato)*/
+.header-2{
+    float: right;
+    margin-right: 20px;
+    margin-top: 5px;
+    position: sticky;
+    top: 0;
+}
+/*Botão menu-principal*/
+#admButton{
+    margin-top: 40px;
+    width:140px;
+    margin-left:40px;
+    background-color:#42210D;
+    border: 1px solid  #42210D;
+}
+#admButton:hover{
+    opacity: 0.8;
+}
+#admButton:focus{
+	box-shadow:2px 2px 2px 1px rgb(250, 155, 0);
+}
+.fa-user{
+    margin-right: 10px;
+    color: white;
+}
+
+/*Input de pesquisa - navbar*/
+input{
+	outline: none;
+}
+input[type=search] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	font-family: inherit;
+	font-size: 100%;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display: none; 
+}
+
+input[type=search] {
+	background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+	border: solid 1px #ccc;
+	padding: 9px 10px 9px 32px;
+	width: 150px;
+	
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+	
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+input[type=search]:focus {
+	width: 200px;
+	background-color: #fff;
+	border-color: rgb(236, 101, 18);
+	
+	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+input:-moz-placeholder {
+	color: #999;
+}
+input::-webkit-input-placeholder {
+	color: #999;
+}
+
+/*Itens Navbar*/
+
+.navbar{
+	position: fixed;
+	z-index: +1;
+    padding: .8rem;
+    margin-left: 220px;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+.navbar-nav li{
+    padding-right: 10px;
+}
+.navbar-nav li{
+    padding-left: 10px;
+}
+.navbar-nav li:hover{
+    opacity: 0.8;
+}
+.padding{
+    padding-bottom: 2rem;
+}
+.nav-link{
+    font-size: 15px !important;
+}
+.dropdown a{
+    color:rgb(255, 150, 0);
+}
+.fa-cart-arrow-down{
+    margin-left: 10px;
+    color: white;
+    width:100px;
+}
+
+
+
+/*Sidebar - Sessão Administrador*/
+
+.sidebar-container {
+    position: fixed;
+    width: 220px;
+    height: 100%;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: #FF9517;
+    color: #fff;
+    margin-top: 0px;
+  }
+  .sidebar-logo {
+    padding: 10px 15px 17px 15px;
+    font-size: 20px;
+    background-color: rgb(255, 150, 5);
+    opacity: 0.6;
+    color: white;
+  }
+  
+  .sidebar-navigation {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    position: relative;
+  }
+  
+  .sidebar-navigation li {
+    background-color: transparent;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    line-height: 20px;
+  }
+  
+  .sidebar-navigation li a {
+    padding: 17px 15px 17px 30px;
+    display: block;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .sidebar-navigation li {
+    margin-right: 10px;
+  }
+  
+  .sidebar-navigation li a:active,
+  .sidebar-navigation li a:hover,
+  .sidebar-navigation li a:focus {
+    text-decoration: none;
+    outline: none;
+  }
+  
+  .sidebar-navigation li::before {
+    background-color: #42210D;
+    position: absolute;
+    content: '';
+    height: 100%;
+    left: 0;
+    top: 0;
+    -webkit-transition: width 0.2s ease-in;
+    transition: width 0.2s ease-in;
+    width: 3px;
+    z-index: -1;
+  }
+  
+  .sidebar-navigation li:hover::before {
+    width: 100%;
+}
+@keyframes zoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}

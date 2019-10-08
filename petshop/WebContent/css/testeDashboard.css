@@ -1,0 +1,25 @@
+.product {
+      position: fixed;
+      top: 80%;
+      left: 95%;
+      transform: translate(-50%, -50%);
+      animation: fly 4s ease-in-out infinite;
+}
+#dog{
+	width: 300px;
+	heigth: 300px;
+}
+
+@keyframes fly {
+      0% {
+            transform: translate(-50%, -46%);
+      }
+
+      50% {
+            transform: translate(-50%, -54%);
+      }
+
+      100% {
+            transform: translate(-50%, -46%);
+      }
+}

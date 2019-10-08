@@ -1,0 +1,151 @@
+/*-----CADASTRO DE PRODUTOS-----*/
+body{
+	background-color: #f5f5f5;
+}
+.main-panel{
+	margin-left: 250px;
+	background-color: #f5f5f5;
+}
+.principal{
+	height: 80px;	
+}
+.adition{
+	align: center;
+	background-color: #fff;
+	margin-right: 20%;
+	margin-left: 20%;
+	border: 1px solid #c7c7c7;
+	border-radius: 4px;
+	box-shadow: -6px -5px 10px -10px;
+}
+#titulo-cadastro{
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+    text-shadow: rgb(226, 225, 225) 0.1em 0.1em 0.2em;
+}
+#cadastroProduto input[type = "text"]{
+	margin-left: 60px;
+    width:78%;
+    background: white;
+    display: block;
+    border: none;
+    color: black;
+    border-radius: 3px;
+    transition: 0.25s;
+    font-size: 15px;
+    box-shadow: 0 0 3px #333333;
+}
+#cadastroProduto input[type = "text"]:focus{
+    width:85%;
+    outline: 0;
+    box-shadow: 2px 2px 2px 2px rgb(250, 155, 0);
+    border: none;
+}
+#cadastroProduto select,
+#cadastroProduto input[type = "number"]{
+	margin-left: 60px;
+     width:78%;
+    background: white;
+    display: block;
+    box-shadow: 0 0 3px #333333;
+    border: none;
+    color: black;
+    border-radius: 3px;
+    transition: 0.25s;
+    font-size: 15px;
+}
+#cadastroProduto select:focus,
+#cadastroProduto input[type = "number"]:focus{
+	border:none;
+     box-shadow: 2px 2px 2px 2px rgb(250, 155, 0);
+     outline: 0;
+}
+.file-chooser{
+	color: #42210D;
+	box-shadow: rgb(255, 209, 179) 0.1em 0.1em 0.2em;
+	margin-left: 40px;
+}
+.preview-img{
+    height:70px;
+    margin-right: 20px;
+}
+#botoes{
+	margin-left: 40px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#boton{
+	margin-bottom: 10px;
+    border: 0;
+    background: rgb(68, 39, 6);
+    text-align: center;
+    outline: none;
+    color: white;
+    transition: 0.25s;
+    cursor: pointer;
+}
+#boton:hover,
+#boton:focus{
+    background: rgb(100, 71, 37);
+    color: white;
+    box-shadow: 0 0 0 0;
+}
+.product {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: fly 4s ease-in-out infinite;
+}
+.table{
+	width:500px;
+	font-family: 'Quicksand', sans-serif;
+	border-collapse: collapse;
+	margin: 25px 0;
+	font-size: 0.9em;
+	min-width: 400px;
+	border-radius: 5px 5px 0 0;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.table thead tr{
+	width:500px;
+	background-color:#42210D;
+	color: #ffffff;
+	text-align: left;
+	font-weight: bold;
+}
+.table th,
+.table td{
+	padding: 12px 15px;
+}
+.table tbody tr{
+	border-bottom: 1px solid #dddddd;
+	width:500px;
+}
+.table tbody tr:last-of-type{
+	width:500px;
+	border-bottom: 2.5px solid #42210D;
+}
+.table tr{
+	color: #42210D;
+	background-color: white;
+}
+.table tbody tr:hover {
+	background-color: white;
+    color: rgb(255, 150, 0);
+}
+@keyframes fly {
+      0% {
+            transform: translate(-50%, -46%);
+      }
+
+      50% {
+            transform: translate(-50%, -54%);
+      }
+
+      100% {
+            transform: translate(-50%, -46%);
+      }
+}

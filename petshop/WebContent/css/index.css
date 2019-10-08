@@ -1,0 +1,381 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+.nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+nav a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    animation: moverEsquerda 1s ease-in;
+}
+#icono1{
+    margin-left: 30px;
+}
+#icono1,
+#icono2,
+#loginButton{
+    margin-right: 25px;
+    text-decoration:none;
+}
+#icono1:hover,
+#icono2:hover,
+#loginButton:hover{
+	color:#fff;
+}
+header{
+    background: #FFB75E;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ED8F03, #FFB75E);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ED8F03, #FFB75E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: auto;
+    padding: 48px;
+    width: 100%;
+}
+.container{
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+.imagemCapa{
+    display: block;
+    height: 460px;
+    object-fit: cover;
+    width: auto;
+    animation: moverUp 1s ease-in;
+}
+.textos{
+    width: 50%;
+    color: #fff;
+}
+.textos h1{
+    font-size:70px;
+    animation: moverDireita 1s ease-in;
+}
+.textos h2{
+    font-size:25px;
+    animation: moverEsquerda 1s ease-in;
+}
+.textos a{
+    display: inline-block;
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-top: 30px;
+    border: 1px solid #fff;
+    width: 150px;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px 0;
+    animation: moverUp 1s ease-in;
+}
+#buttonBaixar:hover{
+    background-color: #fff;
+    color: #ED8F03;
+    text-decoration: none;
+}
+.wave{
+    height: 100px;
+    width: 100%;
+    background: #FFB75E;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ED8F03, #FFB75E);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ED8F03, #FFB75E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.titulo{
+    color: #FF9633;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+main .sobre-nosostros{
+    padding: 30px 0 60px 0;
+}
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+.imagen-about-us{
+    width: 48%;
+}
+.sobre-nosotros .contenido-textos{
+    width: 48%;
+}
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+.contenido-textos h3 span{
+    background: #ED8F03;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 1px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 10px;
+}
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    text-align: justify;
+}
+.about-services{
+    background: #f2f2f2;
+    padding-bottom: 30px;
+}
+.servicio-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.servicio-ind{
+    width: 28%;
+    text-align: center;
+}
+.servicio-ind img{
+    width: 90%;
+    height: 300px;
+}
+.servicio-ind h3{
+    margin: 10px 0;
+}
+.servicio-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px; 
+    border-bottom: 1px solid #ccc;
+}
+.content-foo{
+    text-align: center; 
+}
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #FF9633;
+    padding-bottom: 5px;
+    margin-bottom: 10px; 
+}
+.content-foo p{
+    color: #ccc;
+}
+.titulo-final,
+.logoFooter{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+/* PopUp - Login */
+/* PopUp Background */
+.modal{
+	display:none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+/* PopUp box */
+#popupContainer {
+    background-color:#fff;
+    margin: 10% auto 15% auto;
+    border: 1px solid #888;
+    width: 40%; 
+    padding-bottom: 30px;
+}
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+.avatar {
+    width: 150px;
+	height:150px;
+    border-radius: 50%;   
+}
+/* Inputs */
+#entrarButton{
+    background-color:#42210D;
+    border: 1px solid  #42210D;
+    margin-left: 230px;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+#entrarButton:hover{
+    opacity: 0.8;
+    border:none!important;
+    outline-style: none;
+}
+#uname, #psw {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 26px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+	font-size:16px;
+}
+#uname:focus,
+#psw:focus,
+#entrarButton:focus{
+	box-shadow: 2px 2px 2px 1px rgb(250, 155, 0);
+}
+#psw{
+    margin-bottom: 20px;
+}
+/* Botão fechar */
+.close{
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* Animação pra abrir o PopUp*/
+.animate {
+    animation: zoom 0.6s
+}
+@keyframes zoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+
+
+/*Media index*/
+@keyframes moverEsquerda{
+    0%{
+        opacity:0;
+        transform: translateX(-100px);
+    }
+    100%{
+        opacity:1;
+        transform: translate(0);
+    }
+}
+@keyframes moverDireita{
+    0%{
+        opacity:0;
+        transform: translateX(100px);
+    }
+    100%{
+        opacity:1;
+        transform: translate(0);
+    }
+}
+@keyframes moverUp{
+    0%{
+        opacity:0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity:1;
+        transform: translate(0);
+    }
+}
+@media screen and (max-width:900px){
+    header{
+        background-position: center;
+    }
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sobre-nosostros .contenido-textos{
+        width:90%;
+    }
+    .imagen-about-us{
+        width: 90%;
+    }
+    .servicio-cont{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .servicio-ind{
+        width: 100%;
+        text-align: center;
+    }
+    .servicio-ind:nth-child(1), .servicio-ind:nth-child(2){
+        margin-bottom: 60px;
+    }
+    .servicio-ind img{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:500px){
+    nav{
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+    nav > a{
+        margin-right: 5px;
+    }
+    .textos-header h1{
+        font-size: 35px;
+    }
+    .textos-header h2{
+        font-size: 20px;
+    }
+    .imagen-about-us{
+        margin-bottom: 60px;
+        width: 99%;
+    }
+    .sobre-nosotros .contenido-textos{
+        width:95%;
+    }
+    .contenedor-footer{
+        flex-direction: column;
+        border: none;
+    }
+    .content-foo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .content-foo h4{
+        border: none;
+    }
+    .content-foo p{
+        color:#ccc;
+        border-bottom: 1px solid #ED8F03;
+        padding-bottom: 20px;
+    }
+    .titulo-final{
+        font-size: 20px;
+    }
+}
